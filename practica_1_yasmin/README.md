@@ -15,13 +15,11 @@ ros2 run yasmin_viewer yasmin_viewer_node
 Una vez hecho esto, en el navegador, entramos en http://localhost:5000/
 De esta forma logramos la visualización del ejemplo:
 
-![Image 1](./1.png)
+![1](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/180aa819-c6b8-42f5-82bc-b909a5df50d4)
 
 EL ejemplo básico es tal que así:
 
-______________________________
-captura 2 
-______________________
+![2](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/887095af-0e06-4f93-9cd1-de2dc1dbc1d9)
 
 EL código sirve para implementar una máquina de estados utilizando la biblioteca Yasmin.
 
@@ -46,10 +44,7 @@ La transición de BAR a FOO ocurre cuando el resultado es outcome3.
 EL funcionamiento por tanto es, empieza en FOO, como el contador es menor que 3, la salida es outcome1 y da lugar a la transición FOO-BAR. 
 BAR solo tiene el resultado outcome3 por tanto hace la transición de BAR a FOO. Este paso se repite hasta que el contador es igual a 3. EN este caso la salida de FOO es outcome2, por tanto ocurre una transición de FOO a outcome4.
 
-
-____________________
-3___________________
-
+![3](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/33018ae0-6756-4912-85ba-473223b5acbe)
 
 
 Se crea una instancia del visualizador con el nombre "YASMIN_DEMO" y se ejecuta e imprime el resultado de la maquina de estados.
@@ -91,11 +86,10 @@ De esta forma, cuando el resultado es outcome2, la transición de FOO es al esta
 CUando el resultado es outcome5 (estado EXTRA) realiza una transición a OUTCOME4.
 
 
-________________________________-
-4____________________________
+![4](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/1d85015c-e940-4d3d-b8ad-b865c1b21f1a)
 
-5
-__________________________
+
+![5](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/76812775-2a69-48d2-8c99-d1b7c0bc3378)
 
 
 #Ejercicio 3: Define que es un Blackboard, para qué se utiliza en YASMIN. Indica puntos positivos y negativos.
@@ -112,23 +106,19 @@ Tanto en la clase FooState, como Barstate, como Extrastate, en la funcion de ini
 y despues definimos publisher como un atributo de la clase:  self.publisher = publisher
 EN la función execute se crea el mensaje de tipo string, se asigna un mensaje al atributo data y se publica el mensaje en el topic, de esta forma, el codigo modificado para cada estado seria:
 
-______________________--
-7
-____________________________
+![7](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/47ea65d3-e93c-409c-98a5-ea437f5889f7)
 
 
 En la clase DemoNode, se crea el publisher en el topic pubmsgs y cuando se añaden los estados hay que pasar como argumento el publisher, quedando el codigo tal que asi:
 
-________________________
-8
-________________
-
+![8](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/087ff526-b73f-4296-9082-81a5f9d29dd5)
 
 
 UNa vez hecho esto, si ejecutamos la demo, cada vez que se ejecuta un estado, se esta publicando en el topico pubmsgs un mensaje con el estado que se ejecuta. POdemos visualizarlo tanto mostrando el contenido del topico pubmsgs como con rqt_graph, donde aparte del topico del visualizador, aparece el topico pubmsgs
 
 
 
-_________________
-6
-_________________________
+
+![6](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/8e7d6723-f54a-49e6-bec7-4e608e96358a)
+
+
