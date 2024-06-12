@@ -1,4 +1,4 @@
-# Ejercicio 1: Revisa y transcribe el ejemplo básico describiendo cada uno de los elemntos principales con tus palabras.
+# Ejercicio 1: Revisa y transcribe el ejemplo básico describiendo cada uno de los elementos principales con tus palabras.
 
 En primer lugar, voy a probar la demo, desde la ubicacion ros2_ws, ejecutamos la linea de comandos:
 
