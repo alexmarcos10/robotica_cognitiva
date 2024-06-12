@@ -24,13 +24,21 @@ El ejemplo básico es tal que así:
 El código sirve para implementar una máquina de estados utilizando la biblioteca Yasmin.
 
 Paso 1: Se importan las librerias necesarias:
+
 time: funciones relacionadas con el timepo
+
 rclpy: libreria para trabajar con ros en python
+
 Node: para crear nodos
-State: estate represnta estados de la maquina de estados
-Blackboard:
+
+State: representa estados de la maquina de estados
+
+Blackboard: espacio de memoria comun
+
 StateMachine:maquina de estados como tal
+
 YasminViewerPub: visualización de la maquina de estados (como se muestra en la primera imagen)
+
 
 Se definen dos estados, el primero Foostate, que tiene dos posibles resultados, outcome1 y outcome2. Se define el metodo execute que imprime "Executinng state FOO" e introduce una pausa de 3 segundos y se actualiza el contador (variable foo_str) en blackboard. SI el contador es menor de 3 devuelve outcome1, si el contador es igual o mayor que 3 devuelve outcome2.
 
