@@ -100,14 +100,14 @@ CUando el resultado es outcome5 (estado EXTRA) realiza una transición a OUTCOME
 ![5](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/76812775-2a69-48d2-8c99-d1b7c0bc3378)
 
 
-#Ejercicio 3: Define que es un Blackboard, para qué se utiliza en YASMIN. Indica puntos positivos y negativos.
+# Ejercicio 3: Define que es un Blackboard, para qué se utiliza en YASMIN. Indica puntos positivos y negativos.
 
 Blackboard es un mecanismo que permite compartir datos entre los estados de las maquinas de estado, es un espacio de almacenamiento compartido en el que los estados pueden leer y escribir informacion. EN el ejemplo anterior, vimos como el estado Foo Y Bar compartian informacion mediante el blackboard del contador.
 Los puntos positivos es que permite la comunicacion de una manera coordinada y puede escalarse a multiples estados.
 , 
 Los puntos negativos es que pued ellegar un punto en el que sea complejo poder gestionar y que haya una sincronizacion que no se ajuste bien al problema requerido.
 
-# EJercicio 4: Modifica el ejemplo anterior para que cada estado publique un mensaje diferente sobre un topic de tu elección.
+# Ejercicio 4: Modifica el ejemplo anterior para que cada estado publique un mensaje diferente sobre un topic de tu elección.
 
 Para este ejercicio se ha realizado la siguiente modificacion:
 Tanto en la clase FooState, como Barstate, como Extrastate, en la funcion de inicializacion se define un publisher para poder publicar mensajes : def __init__(self, publisher) -> None:
@@ -122,7 +122,7 @@ En la clase DemoNode, se crea el publisher en el topic pubmsgs y cuando se añad
 ![8](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/087ff526-b73f-4296-9082-81a5f9d29dd5)
 
 
-UNa vez hecho esto, si ejecutamos la demo, cada vez que se ejecuta un estado, se esta publicando en el topico pubmsgs un mensaje con el estado que se ejecuta. POdemos visualizarlo tanto mostrando el contenido del topico pubmsgs como con rqt_graph, donde aparte del topico del visualizador, aparece el topico pubmsgs
+Una vez hecho esto, si ejecutamos la demo, cada vez que se ejecuta un estado, se esta publicando en el topico pubmsgs un mensaje con el estado que se ejecuta. POdemos visualizarlo tanto mostrando el contenido del topico pubmsgs como con rqt_graph, donde aparte del topico del visualizador, aparece el topico pubmsgs
 
 
 
