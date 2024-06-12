@@ -102,10 +102,10 @@ CUando el resultado es outcome5 (estado EXTRA) realiza una transición a OUTCOME
 
 # Ejercicio 3: Define que es un Blackboard, para qué se utiliza en YASMIN. Indica puntos positivos y negativos.
 
-Blackboard es un mecanismo que permite compartir datos entre los estados de las maquinas de estado, es un espacio de almacenamiento compartido en el que los estados pueden leer y escribir informacion. EN el ejemplo anterior, vimos como el estado Foo Y Bar compartian informacion mediante el blackboard del contador.
+Blackboard es un mecanismo que permite compartir datos entre los estados de las maquinas de estado, es un espacio de almacenamiento compartido en el que los estados pueden leer y escribir informacion. En el ejemplo anterior, vimos como el estado Foo Y Bar compartian informacion mediante el blackboard del contador.
 Los puntos positivos es que permite la comunicacion de una manera coordinada y puede escalarse a multiples estados.
-, 
-Los puntos negativos es que pued ellegar un punto en el que sea complejo poder gestionar y que haya una sincronizacion que no se ajuste bien al problema requerido.
+
+Los puntos negativos son que puede llegar un punto en el que sea complejo poder gestionar y que haya una sincronizacion que no se ajuste bien al problema requerido.
 
 # Ejercicio 4: Modifica el ejemplo anterior para que cada estado publique un mensaje diferente sobre un topic de tu elección.
 
