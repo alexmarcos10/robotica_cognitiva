@@ -60,7 +60,7 @@ Se crea una instancia del visualizador con el nombre "YASMIN_DEMO" y se ejecuta 
 # Ejercicio 2: Modifica el ejemplo anterior para que tenga un estado más.
 
 He añadido el estado Extra: 
-
+```
 # define state Extra
 class Extrastate(State):
     def __init__(self) -> None:
@@ -71,7 +71,7 @@ class Extrastate(State):
         time.sleep(3)
  
         return "outcome5"
-        
+ ```       
         
 Este estado tiene como resultado outcome5
 
