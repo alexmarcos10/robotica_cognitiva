@@ -77,7 +77,7 @@ Este estado tiene como resultado outcome5
 
 
 En la maquina de estados, he realizado una modificacion en las transiciones:
-
+```
 # add states
         sm.add_state("FOO", FooState(),
                      transitions={"outcome1": "BAR",
@@ -88,7 +88,7 @@ En la maquina de estados, he realizado una modificacion en las transiciones:
         sm.add_state("EXTRA", Extrastate(),
                      transitions={"outcome5": "outcome4"})
                      
-                     
+ ```                    
                      
 De esta forma, cuando el resultado es outcome2, la transición de FOO es al estado EXTRA
 CUando el resultado es outcome5 (estado EXTRA) realiza una transición a OUTCOME4.
