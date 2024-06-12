@@ -6,7 +6,7 @@ En primer lugar, voy a probar la demo, desde la ubicacion ros2_ws, ejecutamos la
 ros2 run yasmin_demo yasmin_demo.py
 ```
  
-EN una nueva terminal, ejecutamos la linea de comandos:
+En una nueva terminal, ejecutamos la linea de comandos:
 ```
 ros2 run yasmin_viewer yasmin_viewer_node
 
@@ -17,11 +17,11 @@ De esta forma logramos la visualización del ejemplo:
 
 ![1](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/180aa819-c6b8-42f5-82bc-b909a5df50d4)
 
-EL ejemplo básico es tal que así:
+El ejemplo básico es tal que así:
 
 ![2](https://github.com/alexmarcos10/robotica_cognitiva/assets/61562132/887095af-0e06-4f93-9cd1-de2dc1dbc1d9)
 
-EL código sirve para implementar una máquina de estados utilizando la biblioteca Yasmin.
+El código sirve para implementar una máquina de estados utilizando la biblioteca Yasmin.
 
 Paso 1: Se importan las librerias necesarias:
 time: funciones relacionadas con el timepo
